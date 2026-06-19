@@ -1,0 +1,121 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #1dd2ff, #d9e2ec);
+  margin: 0;
+  padding: 0;
+}
+
+/* LOGIN / REGISTER CARD */
+.container {
+  width: 350px;
+  margin: 90px auto;
+  background: #edf1f1;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  color: #1e66d0;
+  margin-bottom: 20px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #e5e8ec;
+  border-radius: 8px;
+  outline: none;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+input:focus {
+  border-color: #1e66d0;
+  box-shadow: 0 0 5px rgba(30, 102, 208, 0.3);
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background: #1e66d0;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #0f4fb8;
+}
+
+a {
+  color: #1e66d0;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+p {
+  font-size: 14px;
+  text-align: center;
+  margin-top: 12px;
+  color: #333;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 20px;
+  background: #f5f9ff;
+  border-bottom: 1px solid #ddd;
+  position: relative;
+}
+
+/* LOGO */
+.logo {
+  position: absolute;
+  left: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #1e66d0;
+}
+
+/* WELCOME TEXT */
+.welcome {
+  font-size: 22px;
+  text-align: center;
+}
+
+/* LOGOUT BUTTON */
+.logout-btn {
+  position: absolute;
+  right: 20px;
+  padding: 6px 12px;
+  font-size: 14px;
+  background: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: auto;
+}
+
+.logout-btn:hover {
+  background: #d93636;
+}
+
+/* HOME CONTENT */
+.home-box {
+  text-align: center;
+  margin-top: 20px;
+}

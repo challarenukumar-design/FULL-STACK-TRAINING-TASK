@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <div class="navbar">
+
+    <div class="logo">Website Page</div>
+
+    <div id="welcome" class="welcome"></div>
+
+    <button class="logout-btn" onclick="logout()">Logout</button>
+
+  </div>
+
+  <!-- CONTENT -->
+  <div class="home-content">
+
+    <p>Login Successful 🎉</p>
+
+    <h3>Project Overview</h3>
+    <ul>
+      <li>User Registration System</li>
+      <li>Login Authentication</li>
+      <li>Password encryption using bcrypt</li>
+      <li>MongoDB database integration</li>
+      <li>Express.js API development</li>
+    </ul>
+
+    <h3>Tech Stack</h3>
+    <ul>
+      <li>HTML, CSS, JavaScript</li>
+      <li>Node.js + Express.js</li>
+      <li>MongoDB + Mongoose</li>
+    </ul>
+
+  </div>
+
+  <script>
+    const user = JSON.parse(localStorage.getItem("user"));
+
+    if (!user) {
+      window.location.href = "index.html";
+    }
+
+    // show welcome text in navbar
+    document.getElementById("welcome").innerText =
+      "Welcome, " + user.fullName;
+
+    function logout() {
+      localStorage.removeItem("user");
+      window.location.href = "index.html";
+    }
+  </script>
+
+</body>
+</html>
