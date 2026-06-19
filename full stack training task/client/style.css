@@ -5,7 +5,6 @@ body {
   padding: 0;
 }
 
-/* LOGIN / REGISTER CARD */
 .container {
   width: 350px;
   margin: 90px auto;
@@ -70,7 +69,6 @@ p {
   color: #333;
 }
 
-/* NAVBAR */
 .navbar {
   display: flex;
   align-items: center;
@@ -90,13 +88,11 @@ p {
   color: #1e66d0;
 }
 
-/* WELCOME TEXT */
 .welcome {
   font-size: 22px;
   text-align: center;
 }
 
-/* LOGOUT BUTTON */
 .logout-btn {
   position: absolute;
   right: 20px;
@@ -114,7 +110,6 @@ p {
   background: #d93636;
 }
 
-/* HOME CONTENT */
 .home-box {
   text-align: center;
   margin-top: 20px;
